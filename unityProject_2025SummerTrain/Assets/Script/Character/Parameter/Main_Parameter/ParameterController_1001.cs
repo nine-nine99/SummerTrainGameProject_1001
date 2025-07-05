@@ -24,7 +24,7 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
         this.ID = ID;
 
         // 获取当前的参数
-        baseOriginParameter = new Parameter(PlayerAttributeDataManager.Instance.currentPlayerAttributeData.GetCurrentSoldierDetailByID(ID).baseParameter); // 深拷贝，防止修改原始参数
+        // baseOriginParameter = new Parameter(PlayerAttributeDataManager.Instance.currentPlayerAttributeData.GetCurrentSoldierDetailByID(ID).baseParameter); // 深拷贝，防止修改原始参数
         currentParameter = new Parameter(baseOriginParameter); // 深拷贝，防止修改原始参数
         // 设置当前的执行参数
         SetHP(currentParameter.HP);
@@ -32,8 +32,6 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
         SetAttackSpeed(currentParameter.AttackSpeed);
         SetAttackDamage(currentParameter.AttackDamage);
         SetSpeed(currentParameter.Speed);
-        SetPickRange(currentParameter.PickRange);
-        SetAttackTimes(currentParameter.AttackTimes);
 
         // 设置角色的最大参数
         HPMax = currentParameter.HP;
@@ -75,10 +73,6 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
     {
         return currentParameter.AttackDamage;
     }
-    public int GetAttackTimes()
-    {
-        return currentParameter.AttackTimes;
-    }
     // 设置攻击伤害
     public void SetAttackDamage(float attackDamage)
     {
@@ -93,23 +87,5 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
     public void SetSpeed(float speed)
     {
         currentParameter.Speed = speed;
-
-    }
-    // 获取拾取范围
-    public float GetPickRange()
-    {
-        return currentParameter.PickRange;
-    }
-    // 设置拾取范围
-    public void SetPickRange(float pickRange)
-    {
-        currentParameter.PickRange = pickRange;
-        // if (transform.GetChild(4).GetComponent<CircleCollider2D>() == null)
-        //     return;
-        // transform.GetChild(4).GetComponent<CircleCollider2D>().radius = pickRange; // 更新拾取范围
-    }
-    public void SetAttackTimes(int attackTimes)
-    {
-        currentParameter.AttackTimes = attackTimes;
     }
 }

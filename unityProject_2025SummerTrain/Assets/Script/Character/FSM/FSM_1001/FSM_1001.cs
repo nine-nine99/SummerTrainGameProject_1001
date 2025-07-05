@@ -18,7 +18,6 @@ public class FSM_1001 : MonoBehaviour
     public float AttackRange => transform.GetComponent<IParameterController>().GetAttackRange(); // 攻击范围
     public float AttackSpeed => transform.GetComponent<IParameterController>().GetAttackRange(); // 攻击速度
     public float Speed => transform.GetComponent<IParameterController>().GetSpeed(); // 角色移动速度
-    public int AttackTimes => (int)transform.GetComponent<IParameterController>().GetAttackTimes(); // 攻击次数
     private void Start()
     {
         states.Add(State.Idle, new IdleState_1001(this));

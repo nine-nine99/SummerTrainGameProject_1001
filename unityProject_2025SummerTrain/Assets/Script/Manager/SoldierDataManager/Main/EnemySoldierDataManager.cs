@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoldierDataManager : Singleton<SoldierDataManager>
+public class EnemySoldierDataManager : Singleton<EnemySoldierDataManager>
 {
-    public SoldierData_SO playerSoldierData_SO;
-    private List<SoldierDetail> soldierDetailsList => playerSoldierData_SO.soldierDetailsList;
+    public SoldierData_SO enemySoldierData_SO;
+    private List<SoldierDetail> soldierDetailsList => enemySoldierData_SO.soldierDetailsList;
     public List<SoldierDetail> GetAllSoldiers()
     {
         return soldierDetailsList;

@@ -20,11 +20,6 @@ public interface IParameterController
     public float GetAttackDamage();
     // 设置攻击伤害
     public void SetAttackDamage(float attackDamage);
-    public float GetPickRange();
-    // 设置拾取范围
-    public void SetPickRange(float pickRange);
-    public void SetAttackTimes(int attackTimes); // 设置攻击次数
-    public int GetAttackTimes(); // 获取攻击次数
 
     public Parameter GetCurrentParameter();
 

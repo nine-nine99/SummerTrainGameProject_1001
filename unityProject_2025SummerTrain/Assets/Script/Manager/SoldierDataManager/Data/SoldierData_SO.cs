@@ -26,8 +26,7 @@ public class Parameter
     public float AttackDamage; // 攻击力
     public float AttackSpeed; // 攻击速度
     public float AttackRange; // 攻击范围
-    public float PickRange; // 拾取范围
-    public int AttackTimes; // 单次攻击的击打次数
+    public float CoolDownTime; // 冷却时间
     public float Cost; // 召唤消耗
 
 
@@ -38,9 +37,8 @@ public class Parameter
         AttackRange = other.AttackRange;
         AttackSpeed = other.AttackSpeed;
         AttackDamage = other.AttackDamage;
-        AttackTimes = other.AttackTimes;
         Speed = other.Speed;
-        PickRange = other.PickRange;
+        CoolDownTime = other.CoolDownTime;
         Cost = other.Cost;
     }
 }

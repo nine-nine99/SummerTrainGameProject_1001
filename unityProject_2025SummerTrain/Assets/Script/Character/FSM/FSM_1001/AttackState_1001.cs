@@ -12,7 +12,6 @@ public class AttackState_1001 : IState
     {
         this.fsm = fsm;
         this.rb = fsm.GetComponent<Rigidbody2D>();
-        this.attackTimes = fsm.AttackTimes; // 默认攻击次数为1
     }
 
     public void OnEnter()
