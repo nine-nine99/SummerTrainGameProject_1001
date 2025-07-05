@@ -19,15 +19,50 @@ public class FSM_1001 : MonoBehaviour
     public float AttackSpeed => transform.GetComponent<IParameterController>().GetAttackRange(); // 攻击速度
     public float Speed => transform.GetComponent<IParameterController>().GetSpeed(); // 角色移动速度
     public int AttackTimes => (int)transform.GetComponent<IParameterController>().GetAttackTimes(); // 攻击次数
+    private Collider2D attachCollider;
+
     private void Start()
     {
-        states.Add(State.Idle, new IdleState_1001(this));
-        states.Add(State.Patrol, new PatrolState_1001(this));
-        states.Add(State.Chase, new ChaseState_1001(this));
-        states.Add(State.Attack, new AttackState_1001(this));
+        try
+        {
+            // 注册 Idle 状态
+            states.Add(State.Idle, new IdleState_1001(this));
+            // 注册 Patrol 状态
+            states.Add(State.Patrol, new PatrolState_1001(this));
+            // 注册 Chase 状态
+            states.Add(State.Chase, new ChaseState_1001(this));
+            // 注册 Attack 状态
+            states.Add(State.Attack, new AttackState_1001(this));
+            // 注册 Stop 状态
+            states.Add(State.Stop, new StopState_1001(this));
 
-        currentState = states[State.Idle];
-        currentState.OnEnter();
+            if (states.ContainsKey(State.Idle))
+            {
+                currentState = states[State.Idle];
+                currentState.OnEnter();
+            }
+
+            // 获取名为"Attach"的子物体的Collider2D
+            Transform attachTransform = transform.Find("Attach");
+            if (attachTransform != null)
+            {
+                attachCollider = attachTransform.GetComponent<Collider2D>();
+                if (attachCollider == null)
+                {
+                    Debug.LogWarning("Attach子物体没有Collider2D组件！");
+                }
+                else
+                {
+                    // 确保isTrigger为true
+                    attachCollider.isTrigger = true;
+                }
+            }
+            else
+            {
+                Debug.LogWarning("未找到名为Attach的子物体！");
+            }
+        }
+        catch (System.Exception) { }
     }
     private void Update()
     {
@@ -48,12 +83,23 @@ public class FSM_1001 : MonoBehaviour
     }
     public void ChangeState(State newState)
     {
-        if (currentState != null)
+        if (!states.ContainsKey(newState))
         {
-            currentState.OnExit();
+            return;
         }
-        currentState = states[newState];
-        currentState.OnEnter();
+        try
+        {
+            if (currentState != null)
+            {
+                currentState.OnExit();
+            }
+            if (states.ContainsKey(newState))
+            {
+                currentState = states[newState];
+                currentState.OnEnter();
+            }
+        }
+        catch (System.Exception) { }
     }
     // 获取当前目标，这里的目标是tag为"Enemy"的物体
     public Transform GetTarget()
@@ -241,6 +287,42 @@ public class FSM_1001 : MonoBehaviour
         }
         return null;
     }
+    
+    /// <summary>
+    /// 停止角色所有行动
+    /// </summary>
+    public void StopAllActions()
+    {
+        ChangeState(State.Stop);
+    }
+    
+    /// <summary>
+    /// 恢复角色行动能力
+    /// </summary>
+    public void ResumeActions()
+    {
+        ChangeState(State.Idle);
+    }
+    
+    /// <summary>
+    /// 检查是否处于停止状态
+    /// </summary>
+    public bool IsStopped()
+    {
+        try
+        {
+            if (states.ContainsKey(State.Stop) && currentState != null)
+            {
+                return currentState == states[State.Stop];
+            }
+            return false;
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"IsStopped() 方法出错: {e.Message}");
+            return false;
+        }
+    }
     public void PlayHitAndKnockback(Transform attacker, float force = 2f, float flashTime = 0.2f)
     {
         if (attacker == null) return;
@@ -264,5 +346,22 @@ public class FSM_1001 : MonoBehaviour
         sr.color = new Color(1f, 0f, 0f, 1f); // 红色
         yield return new WaitForSeconds(flashTime);
         sr.color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    // 只要有Collider2D进入Attach的触发器范围，就会回调
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // 只处理Attach子物体的触发器
+        if (attachCollider != null && other != null && other.transform != null)
+        {
+            // 判断是不是Attach的触发器在触发
+            if (other == attachCollider) return; // 防止自身触发
+
+            // 判断进入的物体是否为Enemy
+            if (other.CompareTag("Enemy"))
+            {
+                Debug.Log("有敌人进入攻击范围！");
+            }
+        }
     }
 }

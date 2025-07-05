@@ -42,7 +42,8 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
     // 获取当前参数
     public float GetHP()
     {
-        return currentParameter.HP;
+        //return currentParameter.HP;
+        return 0;
     }
     // 设置当前参数
     public void SetHP(float hp)

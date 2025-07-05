@@ -25,6 +25,15 @@ public class PlayerAttributeDataManager : Singleton<PlayerAttributeDataManager>
     //     }
     // }
 
+    private void Awake()
+    {
+        if (currentPlayerAttributeData == null)
+        {
+            InitializeCurrentPlayerAttributeData();
+            Debug.Log("[PlayerAttributeDataManager] 自动初始化 currentPlayerAttributeData");
+        }
+    }
+
     // 获取当前玩家属性数据
     public PlayerAttributeData_SO GetCurrentPlayerAttributeData()
     {
