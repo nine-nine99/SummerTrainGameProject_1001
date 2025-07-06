@@ -4,6 +4,8 @@ using UnityEngine;
 
 public interface IParameterController
 {
+    // 获取当前ID
+    public int GetID();
     // 获取当前参数
     public float GetHP();
     // 设置当前参数

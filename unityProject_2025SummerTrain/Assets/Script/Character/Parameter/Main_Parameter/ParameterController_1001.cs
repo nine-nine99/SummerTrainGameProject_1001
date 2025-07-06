@@ -36,6 +36,11 @@ public class ParameterController_1001 : MonoBehaviour, IParameterController
         // 设置角色的最大参数
         HPMax = currentParameter.HP;
     }
+    // 获取当前ID
+    public int GetID()
+    {
+        return ID;
+    }
 
     // 获取当前参数
     public float GetHP()

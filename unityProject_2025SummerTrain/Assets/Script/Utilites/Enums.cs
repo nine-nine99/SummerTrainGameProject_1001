@@ -1,4 +1,5 @@
-public enum State{
+public enum State
+{
     Idle,
     Patrol,
     Escape,
@@ -16,4 +17,9 @@ public enum State{
     FallDown,
     Stop,
     Dead
+}
+
+public enum GridType
+{
+    CanPlace, Road, 
 }

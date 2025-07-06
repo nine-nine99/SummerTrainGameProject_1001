@@ -11,9 +11,10 @@ public class FSMIni_1001 : MonoBehaviour, IFSMIni
 
     private void OnEnable()
     {
-        // parameterController.Init(ID);
+        ID = 1000;
+        parameterController.Init(ID);
 
-        // fSM.enabled = true;
+        fSM.enabled = true;
     }
     public int getID()
     {

@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerAttribute:
     maxSummonableListLength: 5
-    PlayerSoldierID_List: e8030000e9030000
+    PlayerSoldierID_List:
+    - ID: 1000
+      fatigueValue: 0
+      fatigueRecoverSpeed: 1
+    - ID: 1001
+      fatigueValue: 0
+      fatigueRecoverSpeed: 1
