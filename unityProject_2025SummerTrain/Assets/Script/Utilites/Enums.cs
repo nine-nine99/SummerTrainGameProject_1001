@@ -14,5 +14,6 @@ public enum State{
     AttackTarget,// 敌人向目标点逼近 
     CollectCoin,
     FallDown,
+    Stop,
     Dead
 }

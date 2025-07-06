@@ -25,11 +25,14 @@ public class PatrolState_1001 : IState
         randomPos = new Vector2(Random.Range(-3f, 3f), Random.Range(-3f, 3f));
         randomPos += (Vector2)fsm.transform.position; // 将随机位置偏移到当前角色位置附近
         rb.velocity = Vector2.zero; // 确保刚体速度为0
+        if (isWaiting)
+        {
+            
+        }
     }
 
     public void OnUpdate()
     {
-
     }
 
     public void OnExit()
