@@ -21,5 +21,5 @@ public enum State
 
 public enum GridType
 {
-    CanPlace, Road, 
+    CanPlace, Road, Desert
 }

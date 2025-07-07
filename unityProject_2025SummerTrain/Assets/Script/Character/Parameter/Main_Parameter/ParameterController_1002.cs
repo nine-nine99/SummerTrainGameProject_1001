@@ -25,7 +25,9 @@ public class ParameterController_1002 : MonoBehaviour, IParameterController
 
         // 获取当前的参数
         // baseOriginParameter = new Parameter(PlayerAttributeDataManager.Instance.currentPlayerAttributeData.GetCurrentSoldierDetailByID(ID).baseParameter); // 深拷贝，防止修改原始参数
-        currentParameter = new Parameter(baseOriginParameter); // 深拷贝，防止修改原始参数
+
+        baseOriginParameter = SoldierDataManager.Instance.GetSoldierDetailByID(ID).baseParameter; // 获取士兵的原始参数
+        currentParameter = FatigueManager.Instance.ChangeParameterByFatigueValue(ID, PlayerAttributeDataManager.Instance.GetFatigueValueByID(ID)); // 获取
         // 设置当前的执行参数
         SetHP(currentParameter.HP);
         SetAttackRange(currentParameter.AttackRange);

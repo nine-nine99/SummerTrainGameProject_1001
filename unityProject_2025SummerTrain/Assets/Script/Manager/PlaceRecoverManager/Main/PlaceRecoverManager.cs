@@ -41,11 +41,11 @@ public class PlaceRecoverManager : Singleton<PlaceRecoverManager>
                     {
                         // 设置士兵不在战斗中
                         battleSoldierDetail.isInBattle = false;
-                        Debug.Log($"成功恢复士兵，ID: {ID} 在坐标: {coordinate}");
+                        // Debug.Log($"成功恢复士兵，ID: {ID} 在坐标: {coordinate}");
                     }
                     else
                     {
-                        Debug.LogWarning($"无法恢复士兵，ID: {ID} 的数据不存在");
+                        // Debug.LogWarning($"无法恢复士兵，ID: {ID} 的数据不存在");
                     }
                 }
             }
@@ -121,6 +121,7 @@ public class PlaceRecoverManager : Singleton<PlaceRecoverManager>
         {
             // 这里可以添加实际的放置逻辑，如实例化物体
             bool success = SoldierGeneratorManager.Instance.GenerateSoldier(coordinate);
+
             if (!success)
             {
                 Debug.LogWarning($"无法生成士兵, 未选中士兵或");
@@ -131,6 +132,17 @@ public class PlaceRecoverManager : Singleton<PlaceRecoverManager>
             if (!placedCoordinates.Contains(coordinate))
             {
                 placedCoordinates.Add(coordinate);
+                // 通过 coordinate 获取疲劳值数据
+                FatigueDetail fatigueDetail = FatigueManager.Instance.GetFatigueDetailByCoordinate(coordinate);
+                if (fatigueDetail != null)
+                {
+                    // 如果疲劳详情存在，可以在这里使用 fatigueDetail 进行其他操作
+                    PlayerAttributeDataManager.Instance.SetFatigueSpeedByID(SoldierGeneratorManager.Instance.GetCurrentSoldierID(), fatigueDetail.fatigueIncreaseSpeed, fatigueDetail.fatigueRecoverSpeed);
+                }
+                else
+                {
+                    Debug.LogWarning($"无法获取坐标 {coordinate} 的疲劳详情");
+                }
             }
         }
         else

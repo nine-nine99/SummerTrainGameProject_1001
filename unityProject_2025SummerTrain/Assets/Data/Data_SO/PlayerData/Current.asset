@@ -17,9 +17,11 @@ MonoBehaviour:
     PlayerSoldierID_List:
     - ID: 1000
       isInBattle: 0
-      fatigueValue: 0
+      fatigueValue: 17.187618
+      fatigueIncreaseSpeed: 1
       fatigueRecoverSpeed: 1
     - ID: 1001
       isInBattle: 0
       fatigueValue: 0
+      fatigueIncreaseSpeed: 1
       fatigueRecoverSpeed: 1

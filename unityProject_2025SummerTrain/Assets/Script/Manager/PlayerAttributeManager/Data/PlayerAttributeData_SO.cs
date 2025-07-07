@@ -21,7 +21,7 @@ public class PlayerAttributeData_SO : ScriptableObject
                 }
             }
             // 如果没有达到最大召唤数量且没有重复的士兵ID，则添加新的士兵ID
-            BattleSoldierDetail soldierDetail = new BattleSoldierDetail(soldierID, false, 0f, 0f); // 假设疲劳值和恢复速度初始为0
+            BattleSoldierDetail soldierDetail = new BattleSoldierDetail(soldierID, false, 0f, 0f, 1f); // 假设疲劳值初始为0
             playerAttribute.PlayerSoldierID_List.Add(soldierDetail);
             if (FightCanvasController.Instance != null)
             {
@@ -54,12 +54,14 @@ public class BattleSoldierDetail
     public int ID;
     public bool isInBattle = false; // 是否在战斗中
     public float fatigueValue; // 疲劳值
+    public float fatigueIncreaseSpeed; // 疲劳增加速度
     public float fatigueRecoverSpeed; // 疲劳恢复速度
-    public BattleSoldierDetail(int id, bool isInBattle, float fatigueValue, float fatigueRecoverSpeed)
+    public BattleSoldierDetail(int id, bool isInBattle, float fatigueValue, float fatigueIncreaseSpeed, float fatigueRecoverSpeed)
     {
         ID = id;
         this.isInBattle = isInBattle;
         this.fatigueValue = fatigueValue;
+        this.fatigueIncreaseSpeed = fatigueIncreaseSpeed;
         this.fatigueRecoverSpeed = fatigueRecoverSpeed;
     }
 }

@@ -35,6 +35,7 @@ public class PlayerAttributeDataManager : Singleton<PlayerAttributeDataManager>
         foreach (var soldier in currentPlayerAttributeData.playerAttribute.PlayerSoldierID_List)
         {
             soldier.fatigueValue = 0f; // 清空疲劳值
+            soldier.fatigueIncreaseSpeed = 0f; // 清空疲劳增加速度
             soldier.fatigueRecoverSpeed = 1f; // 设置疲劳恢复速度为1
             soldier.isInBattle = false; // 设置是否在战斗中为false
         }
@@ -61,5 +62,50 @@ public class PlayerAttributeDataManager : Singleton<PlayerAttributeDataManager>
         Debug.LogWarning($"士兵ID {soldierID} 不存在于当前玩家属性数据中");
         return null;
     }
+
+    // 获取当前士兵的疲劳值
+    public float GetFatigueValueByID(int soldierID)
+    {
+        BattleSoldierDetail soldierDetail = GetSoldierDetailByID(soldierID);
+        if (soldierDetail != null)
+        {
+            return soldierDetail.fatigueValue;
+        }
+        else
+        {
+            Debug.LogWarning($"无法获取士兵ID {soldierID} 的疲劳值，因为该士兵不存在");
+            return 0f; // 如果士兵不存在，返回0
+        }
+    }
+    // 设置当前士兵的疲劳值
+    public void SetFatigueValueByID(int soldierID, float fatigueValue)
+    {
+        BattleSoldierDetail soldierDetail = GetSoldierDetailByID(soldierID);
+        if (soldierDetail != null)
+        {
+            soldierDetail.fatigueValue = fatigueValue;
+            Debug.Log($"士兵ID {soldierID} 的疲劳值已设置为 {fatigueValue}");
+        }
+        else
+        {
+            Debug.LogWarning($"无法设置士兵ID {soldierID} 的疲劳值，因为该士兵不存在");
+        }
+    }
+    // 设置当前士兵的疲劳增加速度和疲劳恢复速度
+    public void SetFatigueSpeedByID(int soldierID, float fatigueIncreaseSpeed, float fatigueRecoverSpeed)
+    {
+        BattleSoldierDetail soldierDetail = GetSoldierDetailByID(soldierID);
+        if (soldierDetail != null)
+        {
+            soldierDetail.fatigueIncreaseSpeed = fatigueIncreaseSpeed;
+            soldierDetail.fatigueRecoverSpeed = fatigueRecoverSpeed;
+            Debug.Log($"士兵ID {soldierID} 的疲劳增加速度已设置为 {fatigueIncreaseSpeed}，疲劳恢复速度已设置为 {fatigueRecoverSpeed}");
+        }
+        else
+        {
+            Debug.LogWarning($"无法设置士兵ID {soldierID} 的疲劳速度，因为该士兵不存在");
+        }
+    }
+
 }
 

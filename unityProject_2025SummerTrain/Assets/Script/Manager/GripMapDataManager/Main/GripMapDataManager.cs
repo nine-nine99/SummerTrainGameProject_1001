@@ -84,7 +84,7 @@ public class GripMapDataManager : Singleton<GripMapDataManager>
         // 在 tileProperties 中查找匹配的坐标
         foreach (var tileProperty in currentGripMapData.tileProperties)
         {
-            if (tileProperty.tileCoordinate == coordinate)
+            if (tileProperty.tileCoordinate == coordinate && tileProperty.gridType != GridType.CanPlace)
             {
                 return tileProperty.gridType;
             }
