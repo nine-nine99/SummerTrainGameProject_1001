@@ -32,7 +32,7 @@ public class RunEState_1001 : IState
         
         // 设置第一个目标点
         currentTarget = fsm.pathPoints[currentPathIndex];
-        Debug.Log($"开始沿路径移动，目标: {currentTarget}");
+        // Debug.Log($"开始沿路径移动，目标: {currentTarget}");
     }
     
     public void OnUpdate()
@@ -67,7 +67,7 @@ public class RunEState_1001 : IState
             if (currentPathIndex < fsm.pathPoints.Count)
             {
                 currentTarget = fsm.pathPoints[currentPathIndex];
-                Debug.Log($"到达路径点 {currentPathIndex - 1}，下一个目标: {currentTarget}");
+                // Debug.Log($"到达路径点 {currentPathIndex - 1}，下一个目标: {currentTarget}");
             }
             else
             {

@@ -26,3 +26,13 @@ MonoBehaviour:
       fatigueValue: 0
       fatigueIncreaseSpeed: 0
       fatigueRecoverSpeed: 1
+    - ID: 1002
+      isInBattle: 0
+      fatigueValue: 0
+      fatigueIncreaseSpeed: 0
+      fatigueRecoverSpeed: 1
+    - ID: 1003
+      isInBattle: 0
+      fatigueValue: 0
+      fatigueIncreaseSpeed: 0
+      fatigueRecoverSpeed: 1

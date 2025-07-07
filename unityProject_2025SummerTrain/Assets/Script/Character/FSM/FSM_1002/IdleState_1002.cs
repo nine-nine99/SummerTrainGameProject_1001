@@ -20,7 +20,16 @@ public class IdleState_1002 : IState
     }
     public void OnUpdate()
     {
-
+        Transform obj = fsm.GetTarget();
+        if (obj != null)
+        {
+            float distance = Vector2.Distance(fsm.transform.position, obj.position);
+            if (distance <= fsm.AttackRange)
+            {
+                fsm.currentTarget = obj; // 更新当前目标
+                fsm.ChangeState(State.Attack);
+            }
+        }
     }
     public void OnExit()
     {

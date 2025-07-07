@@ -544,7 +544,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884277c053fdd4b49bfa9817921e90fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathPoints: []
+  pathPoints_1001:
+  - {x: -11, y: 3}
+  - {x: -7, y: 3}
+  - {x: -7, y: 0}
+  - {x: -5, y: 0}
+  - {x: -5, y: -5}
+  - {x: -2, y: -5}
+  - {x: -2, y: -8}
+  pathPoints_1002:
+  - {x: 0, y: 10}
+  - {x: 0, y: 1}
+  - {x: 2, y: 1}
+  - {x: 2, y: -5}
+  - {x: -2, y: -5}
+  - {x: -2, y: -8}
+  pathPoints_1003:
+  - {x: 10, y: 6}
+  - {x: 7, y: 6}
+  - {x: 7, y: 1}
+  - {x: 2, y: 1}
+  - {x: 2, y: -5}
+  - {x: -2, y: -5}
+  - {x: -2, y: -5}
+  - {x: -2, y: -8}
   enemyFather: {fileID: 1262793240}
 --- !u!1 &764656789
 GameObject:

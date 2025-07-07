@@ -8,6 +8,7 @@ public class FSM_1001 : MonoBehaviour
     private Dictionary<State, IState> states = new Dictionary<State, IState>();
     private IState currentState;
     public Transform currentEnemy => GetTarget();
+    public Transform currentTarget; // 当前目标，通常是敌人
     private Transform bodySpriteTransform => transform.GetChild(0);
     private float walkBobTimer = 0f;
     private float bodySpriteOriginY = 0f; // 角色原始位置的y坐标
@@ -62,24 +63,27 @@ public class FSM_1001 : MonoBehaviour
     }
 
     // 连击攻击，attackTimes为攻击次数，默认为1
-    public void StartAttackCoroutine(int attackTimes = 1)
+    public void StartAttackCoroutine(int attackTimes = 1, Transform target = null)
     {
-        StartCoroutine(AttackCoroutine(attackTimes));
+        StartCoroutine(AttackCoroutine(attackTimes, target.parent));
     }
 
-    private IEnumerator AttackCoroutine(int attackTimes = 1)
+    private IEnumerator AttackCoroutine(int attackTimes = 1, Transform target = null)
     {
+        Debug.Log($"开始攻击，攻击次数: {attackTimes}, 目标: {target}");
         for (int i = 0; i < attackTimes; i++)
         {
             // 记录初始角度
             float startAngle = bodySpriteTransform.eulerAngles.z;
             // 如果当前目标不为空，追逐目标
-            if (currentEnemy == null)
+            if (target == null)
             {
                 ChangeState(State.Idle);
                 yield break; // 如果没有目标，直接退出
             }
-            Vector2 direction = (currentEnemy.position - transform.position).normalized;
+            Debug.LogWarning("攻击目标为空，无法执行攻击");
+
+            Vector2 direction = (target.position - transform.position).normalized;
             float firstAngle = 0;
             float secondAngle = 0;
             if (direction.x >= 0)
@@ -120,12 +124,8 @@ public class FSM_1001 : MonoBehaviour
                 bodySpriteTransform.rotation = Quaternion.Euler(0, 0, angle);
                 yield return null;
             }
-            // 开启攻击碰撞体
-            transform.GetChild(3).gameObject.GetComponent<CircleCollider2D>().enabled = true;
-            // 等待0.1秒
-            yield return new WaitForSeconds(0.05f);
-            // 关闭攻击碰撞体
-            transform.GetChild(3).gameObject.GetComponent<CircleCollider2D>().enabled = false;
+            // 造成伤害
+            target.GetChild(1).GetComponent<HurtController>().GetHurt(AttackDamage, transform.gameObject);
             // 3. 缓慢复原
             // 如果是最后一下
             if (i == attackTimes - 1)

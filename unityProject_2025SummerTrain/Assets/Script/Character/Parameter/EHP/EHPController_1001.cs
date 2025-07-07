@@ -28,11 +28,6 @@ public class EHPController_1001 : MonoBehaviour, IHPController
     // 死亡
     public void Dead()
     {
-        if (gameObject.CompareTag("Enemy"))
-        {
-            // 敌人死亡
-            // EnemyCharacterPoolManager.Instance.OnDestroyEnemy(gameObject);
-            transform.GetChild(4).GetComponent<DropController_1001>().OnDeath();
-        }
+        Destroy(gameObject);
     }
 }

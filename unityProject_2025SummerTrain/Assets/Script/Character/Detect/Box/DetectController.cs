@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DetectController : MonoBehaviour
 {
-    public float detectionRadius = 5f;
+    public float detectionRadius = 10f;
     public List<Collider2D> detectedColliders = new List<Collider2D>();
     // public LayerMask targetLayer;
 

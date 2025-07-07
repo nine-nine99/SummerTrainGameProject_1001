@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackState_1001 : IState
+public class AttackState_1004 : IState
 {
-    private FSM_1001 fsm;
+    private FSM_1004 fsm;
     private Rigidbody2D rb;
     private int attackTimes; // 攻击次数，默认为1
 
-    public AttackState_1001(FSM_1001 fsm)
+    public AttackState_1004(FSM_1004 fsm)
     {
         this.fsm = fsm;
         this.rb = fsm.GetComponent<Rigidbody2D>();

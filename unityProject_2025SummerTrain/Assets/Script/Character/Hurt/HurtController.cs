@@ -6,7 +6,7 @@ using UnityEngine;
 public class HurtController : MonoBehaviour
 {
     // 目前的攻击物体
-    
+
     public GameObject attacker = null;
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,17 +24,19 @@ public class HurtController : MonoBehaviour
             IHPController hpController = transform.parent.GetComponent<IHPController>();
             // 受伤
             hpController.Hurt(damage, attacker);
-
-            // if (other.transform.parent.GetComponent<Bullet1001_Controller>() != null)
-            // {
-            //     // 销毁子弹
-            //     Destroy(other.transform.parent.gameObject, 0f);
-            // }
-            // else
-            // {
-            //     // 释放敌人物品池
-            //     // EnemyCharacterPoolManager.Instance.OnDestroyEnemy(other.transform.parent.gameObject);
-            // }
+        }
+    }
+    public void GetHurt(float damage, GameObject attacker)
+    {
+        // 处理受伤逻辑
+        IHPController hpController = transform.parent.GetComponent<IHPController>();
+        if (hpController != null)
+        {
+            hpController.Hurt(damage, attacker);
+        }
+        else
+        {
+            Debug.LogError("IHPController not found on parent object");
         }
     }
 }
