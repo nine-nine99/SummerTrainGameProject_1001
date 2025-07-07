@@ -24,19 +24,6 @@ public class FSM_1002 : MonoBehaviour
     private void Update()
     {
         currentState.OnUpdate();
-
-        // 每3秒回复1点生命值
-        IParameterController parameterController = GetComponent<IParameterController>();
-        if (parameterController != null)
-        {
-            float hp = parameterController.GetHP();
-            // 每3秒回复1点生命值
-            if (Time.time % 3 < 0.1f) // 每3秒触发一次
-            {
-                hp += 1f; // 回复1点生命值
-            }
-            parameterController.SetHP(hp);
-        }
     }
     public void ChangeState(State newState)
     {
@@ -94,7 +81,7 @@ public class FSM_1002 : MonoBehaviour
         bodySpriteTransform.rotation = Quaternion.Euler(0, 0, 0);
         SpriteRenderer sr = bodySpriteTransform.GetComponent<SpriteRenderer>();
         sr.color = new Color(1f, 1f, 1f, 1f); // 恢复原色
-        transform.GetComponent<FSM_1001>().enabled = false; // 禁用FSM组件
+        transform.GetComponent<FSM_1002>().enabled = false; // 禁用FSM组件
         // this.gameObject.SetActive(false);
     }
 

@@ -6,10 +6,38 @@ public class PlaceRecoverManager : Singleton<PlaceRecoverManager>
 {
     // 已经被放置了的坐标列表
     private List<Vector2Int> placedCoordinates = new List<Vector2Int>();
+    private bool canControl = false; // 是否可以控制放置和恢复
+    private void OnEnable()
+    {
+        EventHandler.GameStartEvent += OnGameStartEvent; // 游戏开始时清空已放置坐标
+        EventHandler.GameOverEvent += OnGameOverEvent; // 游戏结束时清空已放置坐标
+    }
+    private void OnDisable()
+    {
+        EventHandler.GameStartEvent -= OnGameStartEvent; // 取消订阅游戏开始事件
+        EventHandler.GameOverEvent -= OnGameOverEvent; // 取消订阅游戏结束事件
+    }
     void Update()
     {
+        if (!canControl)
+        {
+            return; // 如果不能控制，则不处理放置和恢复
+        }
         Place();
         Recover();
+    }
+
+    public void OnGameStartEvent()
+    {
+        // 游戏开始时清空已放置坐标
+        ClearAllPlacedCoordinates();
+        canControl = true; // 允许控制放置和恢复
+    }
+    public void OnGameOverEvent()
+    {
+        // 游戏结束时清空已放置坐标
+        ClearAllPlacedCoordinates();
+        canControl = false; // 禁止控制放置和恢复
     }
 
     private void Recover()
@@ -22,6 +50,11 @@ public class PlaceRecoverManager : Singleton<PlaceRecoverManager>
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             // 从鼠标位置发射射线检测，检测是否鼠标位置处是否有parent上挂载了 IParameterController 的物体
             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+            if (IsPointerOverUIObject() || !hit.collider)
+            {
+                // 如果鼠标点击在UI上，则不处理恢复逻辑
+                return;
+            }
             if (hit.collider.transform.parent != null)
             {
                 // 检测到有物体被点击

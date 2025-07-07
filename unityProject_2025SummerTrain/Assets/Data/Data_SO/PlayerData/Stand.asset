@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Stand
   m_EditorClassIdentifier: 
   playerAttribute:
+    HP: 10
     maxSummonableListLength: 5
     PlayerSoldierID_List:
     - ID: 1000
+      isInBattle: 0
       fatigueValue: 0
+      fatigueIncreaseSpeed: 0
       fatigueRecoverSpeed: 1
     - ID: 1001
+      isInBattle: 0
       fatigueValue: 0
+      fatigueIncreaseSpeed: 0
       fatigueRecoverSpeed: 1

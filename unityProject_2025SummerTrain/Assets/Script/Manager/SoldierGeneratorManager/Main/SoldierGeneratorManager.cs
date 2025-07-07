@@ -6,6 +6,38 @@ public class SoldierGeneratorManager : Singleton<SoldierGeneratorManager>
 {
     [HideInInspector]
     private int currentSoldierID = 0; // 当前士兵ID
+    public GameObject SoldierFather; // 士兵父物体
+
+    private void OnEnable() {
+        EventHandler.GameStartEvent += DestroyAllSoldiers; // 游戏开始时销毁所有士兵
+        EventHandler.GameOverEvent += DestroyAllSoldiers; // 游戏结束时销毁所有士兵
+    }
+    private void OnDisable() {
+        EventHandler.GameStartEvent -= DestroyAllSoldiers; // 取消订阅游戏开始事件
+        EventHandler.GameOverEvent -= DestroyAllSoldiers; // 取消订阅游戏结束事件
+    }
+    
+
+    // 销毁所有 SoldierFather 下的士兵
+    public void DestroyAllSoldiers()
+    {
+        if (SoldierFather == null)
+        {
+            SoldierFather = GameObject.Find("SoldierFather");
+        }
+        if (SoldierFather != null)
+        {
+            foreach (Transform child in SoldierFather.transform)
+            {
+                Destroy(child.gameObject);
+            }
+            Debug.Log("已销毁所有士兵");
+        }
+        else
+        {
+            Debug.LogError("SoldierFather 物体未找到，无法销毁士兵");
+        }
+    }
 
     // 输入坐标，通过 currentSoldierID 生成士兵
     public bool GenerateSoldier(Vector2Int coordinate)
@@ -33,6 +65,7 @@ public class SoldierGeneratorManager : Singleton<SoldierGeneratorManager>
         }
         // 你好
         GameObject obj = Instantiate(thePrefab, new Vector3(coordinate.x + 0.5f, coordinate.y + 0.5f, 0), Quaternion.identity);
+        obj.transform.SetParent(SoldierFather.transform); // 设置父物体
         Debug.Log("成功生成士兵，ID: " + currentSoldierID + " 在坐标: " + coordinate);
         battleSoldierDetail.isInBattle = true; // 设置士兵为在战斗中
         // 通过地块情况，设置士兵的疲劳回复速度

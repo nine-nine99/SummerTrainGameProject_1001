@@ -13,7 +13,7 @@ public class Slot_1001_Controller : MonoBehaviour, IPointerClickHandler
         {
             // 获取当前槽位的索引
             int slotIndex = transform.GetSiblingIndex();
-            Debug.Log("Clicked on slot index: " + slotIndex);
+            // Debug.Log("Clicked on slot index: " + slotIndex);
             SoldierGeneratorManager.Instance.SetCurrentSoldierID(id); // 设置当前士兵ID
         }
     }

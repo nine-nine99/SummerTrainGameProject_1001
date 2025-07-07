@@ -16,7 +16,7 @@ MonoBehaviour:
   - soldierName: "\u9776\u5B50"
     soldierID: 1000
     soldierIcon: {fileID: 0}
-    soldierPrefab: {fileID: 0}
+    soldierPrefab: {fileID: 8471826898946763211, guid: e080e6654a12b2c43b9241d8b3d71ecf, type: 3}
     baseParameter:
       HP: 9999
       Speed: 0
@@ -28,11 +28,11 @@ MonoBehaviour:
   - soldierName: "\u666E\u901A\u6B65\u5175"
     soldierID: 1001
     soldierIcon: {fileID: 0}
-    soldierPrefab: {fileID: 0}
+    soldierPrefab: {fileID: 3336970101388774756, guid: c23998829bdedec41b420d4ca1d1b06b, type: 3}
     baseParameter:
       HP: 5
       Speed: 1
-      AttackDamage: 1
+      AttackDamage: 10
       AttackSpeed: 5
       AttackRange: 1
       CoolDownTime: 0

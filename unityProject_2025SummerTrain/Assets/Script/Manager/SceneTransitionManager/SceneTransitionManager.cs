@@ -34,13 +34,13 @@ public class SceneTransitionManager : Singleton<SceneTransitionManager>
         yield return StartCoroutine(Fade(1f));
         // 等待淡出完成
         // 例如，显示游戏结束界面、重置游戏状态等
-        yield return SceneManager.UnloadSceneAsync("UI");
-        yield return SceneManager.UnloadSceneAsync("01.Field");
+        yield return SceneManager.UnloadSceneAsync("UI_1001");
+        yield return SceneManager.UnloadSceneAsync("Field_1001");
         // 加载游戏结束界面
-        yield return SceneManager.LoadSceneAsync("GameStartUI", LoadSceneMode.Additive);
+        yield return SceneManager.LoadSceneAsync("UI_Start", LoadSceneMode.Additive);
 
         // 设置新场景为活动场景
-        Scene newScene = SceneManager.GetSceneByName("GameStartUI");
+        Scene newScene = SceneManager.GetSceneByName("UI_Start");
         if (newScene.IsValid())
         {
             SceneManager.SetActiveScene(newScene);
@@ -59,12 +59,12 @@ public class SceneTransitionManager : Singleton<SceneTransitionManager>
         yield return StartCoroutine(Fade(1f));
         // 等待淡出完成
         // 例如，初始化游戏状态、加载关卡等
-        yield return SceneManager.LoadSceneAsync("UI", LoadSceneMode.Additive);
-        yield return SceneManager.LoadSceneAsync("01.Field", LoadSceneMode.Additive);
+        yield return SceneManager.LoadSceneAsync("UI_1001", LoadSceneMode.Additive);
+        yield return SceneManager.LoadSceneAsync("Field_1001", LoadSceneMode.Additive);
         // 卸载游戏开始界面
-        yield return SceneManager.UnloadSceneAsync("GameStartUI");
+        yield return SceneManager.UnloadSceneAsync("UI_Start");
         // 设置新场景为活动场景
-        Scene newScene = SceneManager.GetSceneByName("01.Field");
+        Scene newScene = SceneManager.GetSceneByName("Field_1001");
         if (newScene.IsValid())
         {
             SceneManager.SetActiveScene(newScene);

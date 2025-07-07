@@ -26,11 +26,6 @@ public class IdleState_1001 : IState
             {
                 fsm.ChangeState(State.Attack);
             }
-            fsm.ChangeState(State.Chase);
-        }
-        else if (fsm.currentEnemy == null){
-            // Debug.Log("IdleState_1001");
-            fsm.ChangeState(State.Patrol);
         }
     }
     public void OnExit()

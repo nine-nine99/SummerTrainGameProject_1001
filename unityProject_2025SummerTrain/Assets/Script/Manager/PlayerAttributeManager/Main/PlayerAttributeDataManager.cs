@@ -9,18 +9,63 @@ public class PlayerAttributeDataManager : Singleton<PlayerAttributeDataManager>
     [Header("玩家属性数据管理器")]
     public PlayerAttributeData_SO standerdPlayerAttributeData; // 标准玩家属性数据
     public PlayerAttributeData_SO currentPlayerAttributeData;
-
-    // 通过 standerdPlayerAttributeData 重置 currentPlayerAttributeData
-    public void ResetCurrentPlayerAttributeData()
+    private void OnEnable() {
+        EventHandler.GameStartEvent += ResetCurrentPlayerAttributeData; // 游戏开始时重置玩家属性数据
+        EventHandler.GameOverEvent += ResetCurrentPlayerAttributeData; // 游戏结束时重置   
+    }
+    private void OnDisable()
     {
-        if (standerdPlayerAttributeData == null)
+        EventHandler.GameStartEvent -= ResetCurrentPlayerAttributeData; // 取消订阅游戏开始事件
+        EventHandler.GameOverEvent -= ResetCurrentPlayerAttributeData; // 取消订阅游戏结束事件
+    }
+
+    // 获取当前玩家HP
+    public int GetCurrentPlayerHP()
+    {
+        if (currentPlayerAttributeData == null)
         {
-            Debug.LogError("标准玩家属性数据未设置，请在编辑器中设置");
+            Debug.LogError("当前玩家属性数据未设置，请先初始化");
+            return 0;
+        }
+
+        return currentPlayerAttributeData.playerAttribute.HP;
+    }
+    // 设置当前玩家HP
+    public void SetCurrentPlayerHP(int hp)
+    {
+        if (currentPlayerAttributeData == null)
+        {
+            Debug.LogError("当前玩家属性数据未设置，请先初始化");
             return;
         }
 
+        currentPlayerAttributeData.playerAttribute.HP = hp;
+        Debug.Log($"当前玩家HP已设置为: {hp}");
+    }
+
+    /// <summary>
+    /// 通过标准玩家属性数据重置当前玩家属性数据
+    /// </summary>
+    public void ResetCurrentPlayerAttributeData()
+    {
+        // 检查标准数据是否存在
+        if (standerdPlayerAttributeData == null)
+        {
+            Debug.LogError("标准玩家属性数据未设置，请在编辑器中设置 standerdPlayerAttributeData");
+            return;
+        }
+
+        // 检查标准数据的玩家属性是否存在
+        if (standerdPlayerAttributeData.playerAttribute == null)
+        {
+            Debug.LogError("标准玩家属性数据中的 playerAttribute 为空，无法重置");
+            return;
+        }
+
+        // 深拷贝标准数据到当前数据
         currentPlayerAttributeData.playerAttribute = new PlayerAttribute(standerdPlayerAttributeData.playerAttribute);
-        Debug.Log("当前玩家属性数据已重置为标准数据");
+
+        Debug.Log($"当前玩家属性数据已重置为标准数据 - 最大可召唤数量: {currentPlayerAttributeData.playerAttribute.maxSummonableListLength}, 士兵数量: {currentPlayerAttributeData.playerAttribute.PlayerSoldierID_List.Count}");
     }
 
     // 清空玩家属性中所有士兵的疲劳值，把疲劳恢复速度设置为1并把是否在战斗中设置为false
@@ -107,5 +152,49 @@ public class PlayerAttributeDataManager : Singleton<PlayerAttributeDataManager>
         }
     }
 
+    /// <summary>
+    /// 验证当前玩家属性数据是否有效
+    /// </summary>
+    /// <returns>如果数据有效返回 true，否则返回 false</returns>
+    public bool IsCurrentPlayerAttributeDataValid()
+    {
+        if (currentPlayerAttributeData == null)
+        {
+            Debug.LogWarning("当前玩家属性数据为空");
+            return false;
+        }
+
+        if (currentPlayerAttributeData.playerAttribute == null)
+        {
+            Debug.LogWarning("当前玩家属性数据中的 playerAttribute 为空");
+            return false;
+        }
+
+        if (currentPlayerAttributeData.playerAttribute.PlayerSoldierID_List == null)
+        {
+            Debug.LogWarning("当前玩家属性数据中的士兵列表为空");
+            return false;
+        }
+
+        return true;
+    }
+
+    /// <summary>
+    /// 强制重置当前玩家属性数据（带验证）
+    /// </summary>
+    public void ForceResetCurrentPlayerAttributeData()
+    {
+        ResetCurrentPlayerAttributeData();
+        
+        // 验证重置是否成功
+        if (!IsCurrentPlayerAttributeDataValid())
+        {
+            Debug.LogError("玩家属性数据重置失败，请检查标准数据配置");
+        }
+        else
+        {
+            Debug.Log("玩家属性数据重置成功并已验证");
+        }
+    }
 }
 
