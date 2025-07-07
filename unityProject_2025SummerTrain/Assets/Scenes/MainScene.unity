@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -518,16 +519,19 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708628167}
+  m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 884277c053fdd4b49bfa9817921e90fe, type: 3}
+  m_Script: {fileID: 11500000, guid: d944cf79d8055b34889deb47cd023718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathPoints:
-  - {x: 0, y: 10}
-  - {x: 0, y: 0}
-  enemyFather: {fileID: 1262793240}
+  moveSpeed: 5
+  zoomSpeed: 2
+  minZoom: 1
+  maxZoom: 8
+  initialZoom: 3
+  minBounds: {x: -12, y: -9}
+  maxBounds: {x: 11, y: 11}
 --- !u!1 &764656789
 GameObject:
   m_ObjectHideFlags: 0
