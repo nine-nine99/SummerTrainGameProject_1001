@@ -279,8 +279,8 @@ GameObject:
   - component: {fileID: 7037302118517686561}
   - component: {fileID: 2402536954818749662}
   - component: {fileID: 3336970101388774753}
-  - component: {fileID: 3336970101388774754}
   - component: {fileID: 3336970101388774755}
+  - component: {fileID: 3336970101388774754}
   - component: {fileID: 5119622302514550527}
   m_Layer: 0
   m_Name: Enemy_1001
@@ -344,7 +344,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dad366653188894586a5e9bc844f670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathPoints: []
+--- !u!114 &3336970101388774755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3336970101388774756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93655f24a88ce1a47a17caaea5123110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3336970101388774754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,18 +370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   HPMax: 0
---- !u!114 &3336970101388774755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3336970101388774756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93655f24a88ce1a47a17caaea5123110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5119622302514550527
 MonoBehaviour:
   m_ObjectHideFlags: 0
