@@ -31,7 +31,7 @@ MonoBehaviour:
     soldierPrefab: {fileID: 3336970101388774756, guid: c23998829bdedec41b420d4ca1d1b06b, type: 3}
     baseParameter:
       HP: 7
-      Speed: 1
+      Speed: 0.4
       AttackDamage: 10
       AttackSpeed: 5
       AttackRange: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
   - soldierName: "\u654C\u4EBA1002"
     soldierID: 1002
     soldierIcon: {fileID: 0}
-    soldierPrefab: {fileID: 3336970101388774756, guid: c23998829bdedec41b420d4ca1d1b06b, type: 3}
+    soldierPrefab: {fileID: 8118101653680300674, guid: bc8559da1a0413f40b143a7debfdb56c, type: 3}
     baseParameter:
       HP: 7
       Speed: 1
@@ -52,10 +52,10 @@ MonoBehaviour:
   - soldierName: "\u654C\u4EBA1003"
     soldierID: 1003
     soldierIcon: {fileID: 0}
-    soldierPrefab: {fileID: 3336970101388774756, guid: c23998829bdedec41b420d4ca1d1b06b, type: 3}
+    soldierPrefab: {fileID: 1073461103144477908, guid: cc29369945658bf4fa5e752e2f22b340, type: 3}
     baseParameter:
-      HP: 7
-      Speed: 1
+      HP: 20
+      Speed: 0.2
       AttackDamage: 10
       AttackSpeed: 5
       AttackRange: 1

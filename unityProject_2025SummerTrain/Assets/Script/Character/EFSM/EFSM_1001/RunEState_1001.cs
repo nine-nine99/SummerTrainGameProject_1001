@@ -78,7 +78,7 @@ public class RunEState_1001 : IState
         
         // 计算移动方向
         Vector2 direction = (currentTarget - currentPosition).normalized;
-        
+        fsm.RotateTowardsTarget(direction);
         // 设置速度
         rb.velocity = direction * fsm.Speed;
         

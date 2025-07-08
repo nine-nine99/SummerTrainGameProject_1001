@@ -49,6 +49,7 @@ public class FSM_1001 : MonoBehaviour
         float closestDistance = Mathf.Infinity;
         foreach (Collider2D collider in detectedColliders)
         {
+            if (collider == null) continue; // 检查是否为null
             if (collider.CompareTag("Enemy"))
             {
                 float distance = Vector2.Distance(transform.position, collider.transform.position);
@@ -84,6 +85,7 @@ public class FSM_1001 : MonoBehaviour
             Debug.LogWarning("攻击目标为空，无法执行攻击");
 
             Vector2 direction = (target.position - transform.position).normalized;
+            RotateTowardsTarget(direction);
             float firstAngle = 0;
             float secondAngle = 0;
             if (direction.x >= 0)
@@ -123,6 +125,12 @@ public class FSM_1001 : MonoBehaviour
                 float angle = Mathf.LerpAngle(firstAngle, secondAngle, t / duration2);
                 bodySpriteTransform.rotation = Quaternion.Euler(0, 0, angle);
                 yield return null;
+            }
+            if (target == null)
+            {
+                bodySpriteTransform.rotation = Quaternion.Euler(0, 0, 0);
+                ChangeState(State.Idle);
+                yield break; // 如果没有目标，直接退出
             }
             // 造成伤害
             target.GetChild(1).GetComponent<HurtController>().GetHurt(AttackDamage, transform.gameObject);

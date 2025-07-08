@@ -1,0 +1,1443 @@
+fileFormatVersion: 2
+guid: 704c0549bab656745b5cff0101e09eca
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RoadRRR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7371.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e3bb7996622ed42be2511569c89603
+      internalID: 2053994746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 7371.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85b409fcb6cea84297e3797d864442f
+      internalID: -851284601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7117.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45eb3266a4b4a44439d871da9fda9157
+      internalID: -1873462376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 7117.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e0919de010d3e408e94d18edcd6cc1
+      internalID: -14328765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6863.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3920f00daf848874985122905d2d8a21
+      internalID: 844585717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_5
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6863.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3bdd01c832c874093a0d84a9692ca1
+      internalID: -846216754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6609.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8f746a3101ad3499d196b3f0cfd20a
+      internalID: -602304785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6609.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524c2e17cfe67a1449c97c844946ee21
+      internalID: -735733475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6355.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e29a2b58b76971459e60a04cc2992c3
+      internalID: -1796489892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_9
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6355.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e04e6ee71e4f747ba98e0e117dc0ea
+      internalID: 123802893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6101.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f427537452f814fa7ddaae1f50594e
+      internalID: 1881815482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_11
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 6101.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c7a88ec7a3d104984c53a0a39d55bc
+      internalID: 1516770725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5847.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28603af8e5ec0c4f89568b0e0521f2a
+      internalID: 1975110977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5847.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efab46f96901cd7489bbfcc740652bb1
+      internalID: -1868665076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5593.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e3e327ead6ea8429ce30f4b4802319
+      internalID: 1176089449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5593.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488dc4ed0c5a5f546a4b30a6aeccb5f4
+      internalID: 1685071536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5339.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78dd604e1c83ea41b8fe1cc9be736d4
+      internalID: -379855659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5339.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b49930e3eb58140b28a8e021f20321
+      internalID: 1462449735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5085.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278924c12fc5f1b4bae4bd2997da46eb
+      internalID: -752256210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_19
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5085.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a42f9e689ea37428afceae239a7b71
+      internalID: 1412293422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4831.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5f315da4c95c2439ac22f53bd52d96
+      internalID: -2021865870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_21
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 4831.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0515a1ba796106d4aad516111524c35a
+      internalID: -931403540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4577.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3ad67e6a6d7394a803935f3f6dc4da
+      internalID: 1870302246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_23
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 4577.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7a5729ac5dd64409ab343af537ffc6
+      internalID: -471040279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4323.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fcb41633e87a44d8e9fbe52db10c8e
+      internalID: 2042330379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 4323.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2035b7c0ff51ce44a46195a6e2f1c15
+      internalID: -2003617200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4069.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40c260ac80865848832ea4bce95619d
+      internalID: 1349122132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_27
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 4069.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91500bdc39255442a618379c3216f4b
+      internalID: 1849188396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3815.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f082ed1e561dda849bf2f36e6f4fb73c
+      internalID: -216142563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_29
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3815.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba4159fab4bd004e993c6e3312751a5
+      internalID: -1388091436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3561.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020e2409bb8dae54ebb8f372c522c296
+      internalID: 1369818417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3561.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472372c0e1fd25d4d909b388698f4269
+      internalID: 1187948917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3307.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c34ac621282184fb467d934f8066ed
+      internalID: -741895827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_33
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3307.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3403d2d434271fc468c5115b3fff96ad
+      internalID: 131240793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3053.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318cc7ee1a752d64f8e00dd4e9efb7da
+      internalID: 567214595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_35
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3053.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5387bc82a08a6e5419fa8e39047d3274
+      internalID: 560698454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2799.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd09c8fbc7b56d499fe65b170a070be
+      internalID: -2123444150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_37
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2799.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4be89788481624a981614b10d61ee7
+      internalID: -1335167249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2545.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d491bcf030a19b469913e2615901ff8
+      internalID: -574677502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_39
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2545.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353ff34ddb2f52c47aea9260f42e642b
+      internalID: 604773678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2291.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478887920fd0d3b48bf1c2b4c4902d45
+      internalID: 1846301888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_41
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2291.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5602c43c61ca7478ffaf426101ecfb
+      internalID: 1995095840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2037.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398b31b434302bd40ade6109e83c931f
+      internalID: -87153350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_43
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 2037.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93005cb74c6a9bb4ea3da25bdd2f536d
+      internalID: 1066357370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1783.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5e81bd9b2112b4fb9084aca1b6a652
+      internalID: -564096174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_45
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1783.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53249eaebd26f84ca4a8a50967de370
+      internalID: -938105628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1529.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84adbdc0b0dea6b4482121546a8558cc
+      internalID: 514888001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_47
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1529.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db79b3a05bfed43bbfc11168232982
+      internalID: -1055681484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1275.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211c416277b745243ad39905acdd76df
+      internalID: 1453056216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_49
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1275.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908372b856c4c5c4596a53fe222f9926
+      internalID: 382445987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1021.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499278258debdd54dbdb6ab72c8262b2
+      internalID: 1186981279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_51
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1021.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc76d56bb122b0479751d9e59483738
+      internalID: -410920177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775ff2afa272704479208c3b43c2b26d
+      internalID: -879489338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_53
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 767.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d49aeaf02c2e24daee2cea7cc14e8f
+      internalID: -2010884603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 513.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d0c9f62d0bc04b8ecfb9a61b91187
+      internalID: 356317878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 513.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68dbade1f466b7942bbefeaec7faa5a0
+      internalID: -917105073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210dadf5ed061b14ea42f34b4be61dc2
+      internalID: 1681121334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_57
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 259.8
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba315a067a23ce42af2d7623f7baae9
+      internalID: -1765473350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5.800003
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ffcfa2fb9084f4782e00387296d7b9
+      internalID: 1015910738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RoadRRR_59
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 5.800003
+        width: 230.5
+        height: 254.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3939442b6e040d4f849a6d8b38b5838
+      internalID: -942748769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RoadRRR_46: 514888001
+      RoadRRR_11: 1516770725
+      RoadRRR_25: -2003617200
+      RoadRRR_47: -1055681484
+      RoadRRR_34: 567214595
+      RoadRRR_35: 560698454
+      RoadRRR_16: -379855659
+      RoadRRR_59: -942748769
+      RoadRRR_5: -846216754
+      RoadRRR_48: 1453056216
+      RoadRRR_19: 1412293422
+      RoadRRR_15: 1685071536
+      RoadRRR_33: 131240793
+      RoadRRR_45: -938105628
+      RoadRRR_57: -1765473350
+      RoadRRR_37: -1335167249
+      RoadRRR_24: 2042330379
+      RoadRRR_12: 1975110977
+      RoadRRR_26: 1349122132
+      RoadRRR_39: 604773678
+      RoadRRR_50: 1186981279
+      RoadRRR_49: 382445987
+      RoadRRR_55: -917105073
+      RoadRRR_27: 1849188396
+      RoadRRR_18: -752256210
+      RoadRRR_10: 1881815482
+      RoadRRR_28: -216142563
+      RoadRRR_14: 1176089449
+      RoadRRR_53: -2010884603
+      RoadRRR_31: 1187948917
+      RoadRRR_8: -1796489892
+      RoadRRR_52: -879489338
+      RoadRRR_44: -564096174
+      RoadRRR_30: 1369818417
+      RoadRRR_23: -471040279
+      RoadRRR_56: 1681121334
+      RoadRRR_6: -602304785
+      RoadRRR_20: -2021865870
+      RoadRRR_17: 1462449735
+      RoadRRR_54: 356317878
+      RoadRRR_42: -87153350
+      RoadRRR_40: 1846301888
+      RoadRRR_32: -741895827
+      RoadRRR_21: -931403540
+      RoadRRR_7: -735733475
+      RoadRRR_58: 1015910738
+      RoadRRR_41: 1995095840
+      RoadRRR_36: -2123444150
+      RoadRRR_9: 123802893
+      RoadRRR_1: -851284601
+      RoadRRR_43: 1066357370
+      RoadRRR_29: -1388091436
+      RoadRRR_22: 1870302246
+      RoadRRR_0: 2053994746
+      RoadRRR_2: -1873462376
+      RoadRRR_38: -574677502
+      RoadRRR_4: 844585717
+      RoadRRR_13: -1868665076
+      RoadRRR_3: -14328765
+      RoadRRR_51: -410920177
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

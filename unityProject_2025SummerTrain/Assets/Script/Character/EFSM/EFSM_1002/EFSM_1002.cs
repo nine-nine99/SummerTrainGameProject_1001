@@ -38,11 +38,11 @@ public class EFSM_1002 : MonoBehaviour
     {
         if (direction.x > 0)
         {
-            bodySpriteTransform.GetComponent<SpriteRenderer>().flipX = false;
+            bodySpriteTransform.GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (direction.x < 0)
         {
-            bodySpriteTransform.GetComponent<SpriteRenderer>().flipX = true;
+            bodySpriteTransform.GetComponent<SpriteRenderer>().flipX = false;
         }
     }
     // 当被释放时的回调

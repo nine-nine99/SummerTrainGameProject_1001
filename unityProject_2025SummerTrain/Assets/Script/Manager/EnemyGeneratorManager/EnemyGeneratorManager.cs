@@ -11,7 +11,7 @@ public class EnemyGeneratorManager : Singleton<EnemyGeneratorManager>
 
     public GameObject enemyFather; // 敌人父物体
     private bool canControl = false; // 是否可以控制生成敌人
-    private float generateInterval = 1.0f; // 敌人生成间隔时间
+    private float generateInterval = 2.0f; // 敌人生成间隔时间
     private float timer = 0.0f; // 总计时器
     private float generateTime = 0.0f; // 生成敌人计时器
     private float gameDuration = 120.0f; // 游戏持续时间
@@ -42,8 +42,8 @@ public class EnemyGeneratorManager : Singleton<EnemyGeneratorManager>
             if (generateTime >= generateInterval)
             {
                 // 每隔一定时间生成一个敌人
-                // int enemyID = Random.Range(1001, 1004); // 随机选择敌人ID (1001, 1002, 或 1003)
-                int enemyID = 1001;
+                int enemyID = Random.Range(1001, 1004); // 随机选择敌人ID (1001, 1002, 或 1003)
+                // int enemyID = 1001;
                 List<Vector2> pathPoints = null;
                 int randomIndex = Random.Range(1, 4); // 随机选择路径点列表
 
