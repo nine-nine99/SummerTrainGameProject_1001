@@ -15,7 +15,7 @@ MonoBehaviour:
   soldierDetailsList:
   - soldierName: "\u4E3B\u89D2"
     soldierID: 1000
-    soldierIcon: {fileID: 21300000, guid: 3494dc956dfd7174abc07060940a2848, type: 3}
+    soldierIcon: {fileID: 21300000, guid: 0f8938af77bc2f04cabe14b8aef0fdfa, type: 3}
     soldierPrefab: {fileID: 2712003387277595137, guid: dd8c25c070790d64db08075e08c7d3f9, type: 3}
     baseParameter:
       HP: 10
@@ -27,7 +27,7 @@ MonoBehaviour:
       Cost: 0
   - soldierName: "\u4E00\u53F7"
     soldierID: 1001
-    soldierIcon: {fileID: 21300000, guid: 9aebd705574f9e642aef1e5f59b3e4d8, type: 3}
+    soldierIcon: {fileID: 21300000, guid: 866707ae85b7c2846a40e2d4477dd013, type: 3}
     soldierPrefab: {fileID: 399937875805366189, guid: d434d5eceba00a34b9c4b42286172dd0, type: 3}
     baseParameter:
       HP: 10
@@ -39,7 +39,7 @@ MonoBehaviour:
       Cost: 0
   - soldierName: "\u4E8C\u53F7"
     soldierID: 1002
-    soldierIcon: {fileID: 21300000, guid: 9aebd705574f9e642aef1e5f59b3e4d8, type: 3}
+    soldierIcon: {fileID: 21300000, guid: 4aa8c5073dd2b3041897057222cb0fe3, type: 3}
     soldierPrefab: {fileID: 8979211897838712256, guid: b5f576eb2a13f0e4dabbfce4202b1380, type: 3}
     baseParameter:
       HP: 10
@@ -51,7 +51,7 @@ MonoBehaviour:
       Cost: 0
   - soldierName: "\u4E09\u53F7"
     soldierID: 1003
-    soldierIcon: {fileID: 21300000, guid: 9aebd705574f9e642aef1e5f59b3e4d8, type: 3}
+    soldierIcon: {fileID: 21300000, guid: 77fa52a644be59f4d8eec341b66f81df, type: 3}
     soldierPrefab: {fileID: 437618902553599147, guid: 049dee76bea25e94bbe79715acefe601, type: 3}
     baseParameter:
       HP: 10
